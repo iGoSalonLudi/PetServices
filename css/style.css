@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 10px auto;
+  background-color: #ffffff9c;
+  /* 在透明區域顯示的背景色 */
+  padding: 20px;
+  border: 2px solid rgb(165, 164, 164);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background-image: url("image/background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: screen; */
+  /* 調整 blend mode，根據需要使用其他值 */
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* 最小的 z-index，放在所有內容的後面 */
+  opacity: 0.4;
+  /* 設定透明度，可根據需要進行調整 */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+  /* 設定與 .logo 的高度相同 */
+}
+
+.page-title {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  /* 設定高度，與 line-height 相同 */
+  border-radius: 50%;
+  /* 讓 .logo 變成圓形 */
+  vertical-align: middle;
+  /* 將 .logo 垂直置中對齊 */
+}
+
+.social-link {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-link img {
+  max-width: 30px;
+  vertical-align: middle;
+}
+
+.contact-info,
+.business-hours,
+.services-pet-types,
+.services-item,
+.customer-base {
+  color: #555;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-info h2,
+.contact-info p,
+.business-hours h2,
+.business-hours p,
+.services-pet-types h2,
+.services-pet-types p,
+.services-item h2,
+.services-item p,
+.customer-base h2,
+.customer-base p,
+.services-hashtag h2,
+.services-hashtag p {
+  margin-bottom: 5px;
+}
+
+.contact-info ul,
+.business-hours ul,
+.services-pet-types ul,
+.services-item ul,
+.customer-base ul,
+.services-hashtag ul {
+  margin-top: 5px;
+}
+
+.services-list,
+.customer-source-list {
+  list-style: none;
+  padding: 0;
+}
+
+.services-list li,
+.customer-source-list li {
+  margin-bottom: 5px;
+}
+
+.services-list li ul,
+.customer-source-list li ul {
+  margin-bottom: 0px;
+}
+
+.services-list li ul,
+.customer-source-list li ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.services-list li ul li,
+.customer-source-list li ul li {
+  list-style: initial;
+  margin-bottom: 0px;
+  display: list-item;
+  text-align: match-parent;
+  margin-left: 25px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid gray;
+  /* margin-top: 20px; */
+  color: #888;
+}
+
+/* 媒體查詢 */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+
+  .container {
+    background-color: #ffffff9c;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    background-size: contain;
+    /* 或其他您想要的大小 */
+    /*background-attachment: scroll;
+        /* 移除 fixed 屬性，讓背景可以滾動 */
+    /* background-blend-mode: screen; */
+    /* 調整 blend mode，根據需要使用其他值 */
+  }
+
+  .googlesitrmap {
+    width: 100%;
+  }
+
+  footer {
+    box-shadow: 0 0 5px 5px orange;
+    margin-bottom: 10px;
+  }
+}
+
+.font-style1 {
+  font-weight: bold;
+}
